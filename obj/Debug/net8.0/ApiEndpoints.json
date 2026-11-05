@@ -1,0 +1,822 @@
+[
+  {
+    "ContainingType": "PeoplePro.Controllers.AttendanceController",
+    "Method": "TakeAttendance",
+    "RelativePath": "api/v1/attendance/take",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "PeoplePro.Dtos.AttendanceDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.CanteenController",
+    "Method": "GetMealCard",
+    "RelativePath": "api/v1/canteen/meal/card",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "startDate",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "endDate",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.CanteenController",
+    "Method": "MealClosing",
+    "RelativePath": "api/v1/canteen/meal/closing",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "PeoplePro.Dtos.MealClosingDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.CanteenController",
+    "Method": "MealClosingCancel",
+    "RelativePath": "api/v1/canteen/meal/closing/cancel",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "PeoplePro.Dtos.MealClosingCancelDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.CanteenController",
+    "Method": "MealClosingList",
+    "RelativePath": "api/v1/canteen/meal/closing/list",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.CanteenController",
+    "Method": "TokenRequest",
+    "RelativePath": "api/v1/canteen/token",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "token",
+        "Type": "PeoplePro.Dtos.TokenDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.DirectoryController",
+    "Method": "GetOptions",
+    "RelativePath": "api/v1/directory/options",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.DirectoryController",
+    "Method": "Search",
+    "RelativePath": "api/v1/directory/search",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "PeoplePro.Dtos.SearchDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.HiveController",
+    "Method": "Get",
+    "RelativePath": "api/v1/hive",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.HiveController",
+    "Method": "ClearCache",
+    "RelativePath": "api/v1/hive/cache/clear",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "key",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "empCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.HiveController",
+    "Method": "GetDepartments",
+    "RelativePath": "api/v1/hive/departments",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.HiveController",
+    "Method": "GetEmployeeAttendances",
+    "RelativePath": "api/v1/hive/employee/attendances",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "departmentId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "entryDate",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.HiveController",
+    "Method": "GetHubUser",
+    "RelativePath": "api/v1/hive/hub/users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.HiveController",
+    "Method": "GetNoticeImage",
+    "RelativePath": "api/v1/hive/image",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.HiveController",
+    "Method": "GetPoll",
+    "RelativePath": "api/v1/hive/poll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "empCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.HiveController",
+    "Method": "SubmitPoll",
+    "RelativePath": "api/v1/hive/poll/submit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "empCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "pollLineId",
+        "Type": "System.Int64",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.HiveController",
+    "Method": "UpdateUserAttendanceLocation",
+    "RelativePath": "api/v1/hive/user/attendance/location/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "empCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "attendanceLocationId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.HiveController",
+    "Method": "GetAttendanceLocations",
+    "RelativePath": "api/v1/hive/user/attendance/locations",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.HiveController",
+    "Method": "SaveAttendanceZone",
+    "RelativePath": "api/v1/hive/user/attendance/zone/save",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "zones",
+        "Type": "System.Collections.Generic.List\u00601[[PeoplePro.Models.AttendanceLocationModel, PeoplePro, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.HiveController",
+    "Method": "GetAttendanceZones",
+    "RelativePath": "api/v1/hive/user/attendance/zones",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "attendanceLocationId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.HiveController",
+    "Method": "GetUserData",
+    "RelativePath": "api/v1/hive/user/data",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "empCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.HiveController",
+    "Method": "GetUserEdition",
+    "RelativePath": "api/v1/hive/user/editions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.HiveController",
+    "Method": "GetJobCard",
+    "RelativePath": "api/v1/hive/user/jobcard",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "empId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "fromDate",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "toDate",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.HiveController",
+    "Method": "GetLeaveApplications",
+    "RelativePath": "api/v1/hive/user/leave/applications",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "empId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.HiveController",
+    "Method": "GetLeaveApprovals",
+    "RelativePath": "api/v1/hive/user/leave/approvals",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "empId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "docNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.HiveController",
+    "Method": "GetOutstationApprovals",
+    "RelativePath": "api/v1/hive/user/outstation/approvals",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "empId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "docNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.HiveController",
+    "Method": "GetOutstationDuties",
+    "RelativePath": "api/v1/hive/user/outstation/duties",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "empId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.HiveController",
+    "Method": "CreateLog",
+    "RelativePath": "api/v1/hive/user/password/change",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "PeoplePro.Dtos.PasswordDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.HiveController",
+    "Method": "GetPayslipLine",
+    "RelativePath": "api/v1/hive/user/payslip/lines",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "payrollId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.HiveController",
+    "Method": "GetPayslips",
+    "RelativePath": "api/v1/hive/user/payslips",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "empId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.HiveController",
+    "Method": "GetPendingApprovals",
+    "RelativePath": "api/v1/hive/user/pending/approvals",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "empCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.HiveController",
+    "Method": "GetProvidentFund",
+    "RelativePath": "api/v1/hive/user/pf",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "empId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.HiveController",
+    "Method": "GetProfile",
+    "RelativePath": "api/v1/hive/user/profile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "empCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.HiveController",
+    "Method": "UpdateProfile",
+    "RelativePath": "api/v1/hive/user/profile/update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "PeoplePro.Dtos.ProfileUpdateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.HiveController",
+    "Method": "GetUserAppUpdated",
+    "RelativePath": "api/v1/hive/user/updated",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.NotificationController",
+    "Method": "SendNotification",
+    "RelativePath": "api/v1/notification/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "PeoplePro.Dtos.NotificationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.NotificationController",
+    "Method": "GetNotificationListAll",
+    "RelativePath": "api/v1/notification/list/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.ReportController",
+    "Method": "GetAttendanceCard",
+    "RelativePath": "api/v1/report/job-card",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "empCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "fromDate",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "toDate",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.ReportController",
+    "Method": "GetAttendanceRegularization",
+    "RelativePath": "api/v1/report/regularization",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "empCode",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "lines",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.SecurityController",
+    "Method": "RemoveDevices",
+    "RelativePath": "api/v1/security/device/remove",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.SecurityController",
+    "Method": "DeviceRequest",
+    "RelativePath": "api/v1/security/device/request",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "device",
+        "Type": "PeoplePro.Dtos.DeviceDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.SecurityController",
+    "Method": "GetDeviceStatus",
+    "RelativePath": "api/v1/security/device/status",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "deviceId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.SecurityController",
+    "Method": "CreateLog",
+    "RelativePath": "api/v1/security/log/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "log",
+        "Type": "PeoplePro.Dtos.LogDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.SecurityController",
+    "Method": "GetUserAccess",
+    "RelativePath": "api/v1/security/user/access",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "empCode",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.SecurityController",
+    "Method": "UpdateUserAccess",
+    "RelativePath": "api/v1/security/user/access/update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "access",
+        "Type": "PeoplePro.Models.UserAccessModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.SecurityController",
+    "Method": "UserLogin",
+    "RelativePath": "api/v1/security/user/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "PeoplePro.Dtos.LoginDto",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.SecurityController",
+    "Method": "GetUserStatus",
+    "RelativePath": "api/v1/security/user/status",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "version",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.UpdateController",
+    "Method": "GetApk",
+    "RelativePath": "api/v1/update/apk",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "version",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "arch",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PeoplePro.Controllers.UpdateController",
+    "Method": "Check",
+    "RelativePath": "api/v1/update/check",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

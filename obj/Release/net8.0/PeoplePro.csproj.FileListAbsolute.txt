@@ -1,0 +1,11 @@
+D:\PeoplePro 3.3.10 (15.08.2026)\PeopleProAPI\PeopleProAPI\obj\Release\net8.0\PeoplePro.csproj.AssemblyReference.cache
+D:\PeoplePro 3.3.10 (15.08.2026)\PeopleProAPI\PeopleProAPI\obj\Release\net8.0\rpswa.dswa.cache.json
+D:\PeoplePro 3.3.10 (15.08.2026)\PeopleProAPI\PeopleProAPI\obj\Release\net8.0\PeoplePro.Reports.JobCardReport.resources
+D:\PeoplePro 3.3.10 (15.08.2026)\PeopleProAPI\PeopleProAPI\obj\Release\net8.0\PeoplePro.Reports.RegularizationReport.resources
+D:\PeoplePro 3.3.10 (15.08.2026)\PeopleProAPI\PeopleProAPI\obj\Release\net8.0\PeoplePro.csproj.GenerateResource.cache
+D:\PeoplePro 3.3.10 (15.08.2026)\PeopleProAPI\PeopleProAPI\obj\Release\net8.0\PeoplePro.GeneratedMSBuildEditorConfig.editorconfig
+D:\PeoplePro 3.3.10 (15.08.2026)\PeopleProAPI\PeopleProAPI\obj\Release\net8.0\PeoplePro.AssemblyInfoInputs.cache
+D:\PeoplePro 3.3.10 (15.08.2026)\PeopleProAPI\PeopleProAPI\obj\Release\net8.0\PeoplePro.AssemblyInfo.cs
+D:\PeoplePro 3.3.10 (15.08.2026)\PeopleProAPI\PeopleProAPI\obj\Release\net8.0\PeoplePro.csproj.CoreCompileInputs.cache
+D:\PeoplePro 3.3.10 (15.08.2026)\PeopleProAPI\PeopleProAPI\obj\Release\net8.0\PeoplePro.MvcApplicationPartsAssemblyInfo.cs
+D:\PeoplePro 3.3.10 (15.08.2026)\PeopleProAPI\PeopleProAPI\obj\Release\net8.0\PeoplePro.MvcApplicationPartsAssemblyInfo.cache
