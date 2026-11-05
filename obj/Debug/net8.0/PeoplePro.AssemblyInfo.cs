@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PeoplePro")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+55180e7e114b026193a85fa4d3158dfad778f91b")]
 [assembly: System.Reflection.AssemblyProductAttribute("PeoplePro")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PeoplePro")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
