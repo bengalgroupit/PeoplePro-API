@@ -415,7 +415,7 @@ public class User(IConfiguration configuration) : Connection(configuration)
                     sqlCommand.CommandType = CommandType.StoredProcedure;
                     sqlCommand.Parameters.AddWithValue("@EmpCode", data.EmpCode);
                         sqlCommand.Parameters.AddWithValue("@BloodGroup", data.BloodGroup.Data);
-                        sqlCommand.Parameters.AddWithValue("@IsBloodDonor", data.IsBloodDonor.Data);
+                        sqlCommand.Parameters.AddWithValue("@IsBloodDonor", null);
                         sqlCommand.Parameters.AddWithValue("@Ipx", data.Ipx.Data);
                         sqlCommand.Parameters.AddWithValue("@MobileNo", data.MobileNo.Data);
                         sqlCommand.Parameters.AddWithValue("@MobileNoEmergency", data.MobileNoEmergency.Data);
@@ -451,10 +451,7 @@ public class User(IConfiguration configuration) : Connection(configuration)
                 profile.Email = Convert.ToString(sqlDataReader["Email"]);
                 profile.MobileNo = Convert.ToString(sqlDataReader["MobileNo"]);
                 profile.EmergencyContact = Convert.ToString(sqlDataReader["EmergencyContact"]);
-                profile.IsBloodDonor = new bool?(Convert.ToBoolean(sqlDataReader["IsBloodDonor"]));
-
-
-                
+                //profile.IsBloodDonor = new bool?(Convert.ToBoolean(sqlDataReader["IsBloodDonor"]));
 
                 return profile;
             }

@@ -37,25 +37,26 @@ public class EmployeeDirectory(IConfiguration configuration) : Connection(config
                         MobileNo = Convert.ToString(sqlDataReader["MobileNo"]),
                         Email = Convert.ToString(sqlDataReader["Email"]),
                         Ipx = Convert.ToString(sqlDataReader["Ipx"]),
-                        MotherName = Convert.ToString(sqlDataReader["MotherName"]),
-                        FatherName = Convert.ToString(sqlDataReader["FatherName"]),
-                        PresentAddress = Convert.ToString(sqlDataReader["PresentAddress"]),
-                        PermanentAddress = Convert.ToString(sqlDataReader["PermanentAddress"]),
-                        Photo = (byte[]) sqlDataReader["Photo"],
+                        //MotherName = Convert.ToString(sqlDataReader["MotherName"]),
+                        //FatherName = Convert.ToString(sqlDataReader["FatherName"]),
+                        //PresentAddress = Convert.ToString(sqlDataReader["PresentAddress"]),
+                        //PermanentAddress = Convert.ToString(sqlDataReader["PermanentAddress"]),
+                        //Photo = (byte[]) sqlDataReader["Photo"],
+                        Photo = sqlDataReader["Photo"] as byte[] ?? Array.Empty<byte>(),
                         EmergencyContact = Convert.ToString(sqlDataReader["EmergencyContact"]),
                         MaritalStatus = Convert.ToString(sqlDataReader["MaritalStatus"]),
-                        IsBloodDonor = Convert.ToBoolean(sqlDataReader["IsBloodDonor"]),
-                        IsActive = Convert.ToBoolean(sqlDataReader["IsActive"]),
-                        ExpLevel = Convert.ToInt32(sqlDataReader["ExpLevel"]),
-                        JoiningDate = new DateTime?(Convert.ToDateTime(sqlDataReader["JoiningDate"])),
+                        //IsBloodDonor = Convert.ToBoolean(sqlDataReader["IsBloodDonor"]),
+                        //IsActive = Convert.ToBoolean(sqlDataReader["IsActive"]),
+                        ///ExpLevel = Convert.ToInt32(sqlDataReader["ExpLevel"]),
+                        //JoiningDate = new DateTime?(Convert.ToDateTime(sqlDataReader["JoiningDate"])),
                         Gender = Convert.ToString(sqlDataReader["Gender"]),
-                        InActiveFrom = Convert.ToDateTime(sqlDataReader["InActiveFrom"]),
+                        //InActiveFrom = Convert.ToDateTime(sqlDataReader["InActiveFrom"]),
                         Religion = Convert.ToString(sqlDataReader["Religion"])
                     });
                 }
-                catch
+                catch(Exception ex)
                 {
-                    //
+                    throw ex;
                 }
             }
             sqlDataReader.Close();
